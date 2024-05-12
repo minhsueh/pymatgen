@@ -11,8 +11,13 @@ from pymatgen.analysis.xas.spectrum import XAS
 from pymatgen.util.testing import TEST_FILES_DIR, PymatgenTest
 from pymatgen.vis.plotters import SpectrumPlotter
 
+<<<<<<< HEAD
 with open(f"{TEST_FILES_DIR}/spectrum_test/LiCoO2_k_xanes.json") as fp:
     spect_data_dict = json.load(fp, cls=MontyDecoder)
+=======
+with open(f"{TEST_FILES_DIR}/analysis/spectrum_test/LiCoO2_k_xanes.json") as file:
+    spect_data_dict = json.load(file, cls=MontyDecoder)
+>>>>>>> upstream/master
 
 
 class TestSpectrumPlotter(PymatgenTest):
